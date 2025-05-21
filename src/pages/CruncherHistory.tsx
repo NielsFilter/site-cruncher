@@ -51,7 +51,7 @@ export const CruncherHistory: React.FC = () => {
         </Link>
       </div>
       
-      <div className="bg-white rounded-lg shadow-md p-6 mb-6">
+      <div className="bg-white dark:bg-dark-lighter rounded-lg shadow-md p-6 mb-6">
         <h3 className="text-lg font-semibold mb-4">Cruncher Details</h3>
         <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
           <div>

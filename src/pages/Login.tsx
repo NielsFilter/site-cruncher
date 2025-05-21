@@ -15,7 +15,7 @@ export const Login: React.FC = () => {
   }, [user, navigate]);
 
   return (
-    <div className="min-h-screen bg-gray-100 flex flex-col justify-center py-12 sm:px-6 lg:px-8">
+    <div className="min-h-screen bg-gray-100 dark:bg-dark flex flex-col justify-center py-12 sm:px-6 lg:px-8">
       <div className="sm:mx-auto sm:w-full sm:max-w-md text-center">
         <div className="flex justify-center">
           <Brain className="h-16 w-16 text-primary" />
@@ -35,7 +35,7 @@ export const Login: React.FC = () => {
               <div className="w-full border-t border-gray"></div>
             </div>
             <div className="relative flex justify-center text-sm">
-              <span className="px-2 bg-gray-100 text-gray">
+              <span className="px-2 bg-gray-200 dark:bg-gray-700 text-gray">
                 Demo account will be used
               </span>
             </div>

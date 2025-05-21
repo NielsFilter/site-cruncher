@@ -19,7 +19,7 @@ export const CrunchRunList: React.FC<CrunchRunListProps> = ({ runs, isLoading })
 
   if (runs.length === 0) {
     return (
-      <div className="bg-white rounded-lg shadow-md p-8 text-center">
+      <div className="bg-white dark:bg-dark-lighter rounded-lg shadow-md p-8 text-center">
         <p className="text-gray">No crunch runs found. Start a new crunch to see results here.</p>
       </div>
     );
@@ -51,20 +51,20 @@ export const CrunchRunList: React.FC<CrunchRunListProps> = ({ runs, isLoading })
   };
 
   return (
-    <div className="overflow-x-auto bg-white rounded-lg shadow-md">
+    <div className="overflow-x-auto bg-white dark:bg-dark-lighter rounded-lg shadow-md">
       <table className="min-w-full">
         <thead>
-          <tr className="bg-gray-50 border-b">
-            <th className="px-6 py-3 text-left text-xs font-medium text-gray uppercase tracking-wider">Status</th>
-            <th className="px-6 py-3 text-left text-xs font-medium text-gray uppercase tracking-wider">Date</th>
-            <th className="px-6 py-3 text-left text-xs font-medium text-gray uppercase tracking-wider">Pages Crawled</th>
-            <th className="px-6 py-3 text-left text-xs font-medium text-gray uppercase tracking-wider">Chunks Generated</th>
-            <th className="px-6 py-3 text-left text-xs font-medium text-gray uppercase tracking-wider">Duration</th>
+          <tr className="bg-gray-50 dark:bg-dark-lighter border-b border-gray-200 dark:border-gray-700">
+            <th className="px-6 py-3 text-left text-xs font-medium text-gray-700 dark:text-gray-300 uppercase tracking-wider">Status</th>
+            <th className="px-6 py-3 text-left text-xs font-medium text-gray-700 dark:text-gray-300 uppercase tracking-wider">Date</th>
+            <th className="px-6 py-3 text-left text-xs font-medium text-gray-700 dark:text-gray-300 uppercase tracking-wider">Pages Crawled</th>
+            <th className="px-6 py-3 text-left text-xs font-medium text-gray-700 dark:text-gray-300 uppercase tracking-wider">Chunks Generated</th>
+            <th className="px-6 py-3 text-left text-xs font-medium text-gray-700 dark:text-gray-300 uppercase tracking-wider">Duration</th>
           </tr>
         </thead>
-        <tbody className="divide-y divide-gray-200">
+        <tbody className="divide-y divide-gray-200 dark:divide-gray-700">
           {runs.map((run) => (
-            <tr key={run.id} className="hover:bg-gray-50">
+            <tr key={run.id} className="hover:bg-gray-50 dark:hover:bg-dark">
               <td className="px-6 py-4 whitespace-nowrap">
                 <div className="flex items-center">
                   {getStatusIcon(run.status)}
